@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Modern Search Bar -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search for images..." id="searchInput">
+            <button class="search-button" onclick="fetchImages()">
+                <i class="fas fa-plus"></i>
+                Add
+            </button>
+        </div>
+    </div>
+   
+    <div class="container">
+        <!-- Left Panel for Image Information -->
+        <div class="left-panel" id="leftPanel">
+            <h3>Image Gallery</h3>
+            <div id="imageInfoContainer">
+                <!-- Image information will be populated here -->
+            </div>
+        </div>
+
+        <!-- Slides Container (moved to the right) -->
+        <div id="slide" style="margin-left: 350px;">
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=1);" data-image-id="1">
+                <div class="content">
+                    <div class="name" id="title-1">Loading...</div>
+                    <div class="des" id="description-1">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=2);" data-image-id="2">
+                <div class="content">
+                    <div class="name" id="title-2">Loading...</div>
+                    <div class="des" id="description-2">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=3);" data-image-id="3">
+                <div class="content">
+                    <div class="name" id="title-3">Loading...</div>
+                    <div class="des" id="description-3">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=4);" data-image-id="4">
+                <div class="content">
+                    <div class="name" id="title-4">Loading...</div>
+                    <div class="des" id="description-4">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=5);" data-image-id="5">
+                <div class="content">
+                    <div class="name" id="title-5">Loading...</div>
+                    <div class="des" id="description-5">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://picsum.photos/800/600?random=6);" data-image-id="6">
+                <div class="content">
+                    <div class="name" id="title-6">Loading...</div>
+                    <div class="des" id="description-6">Fetching image information...</div>
+                    <button>See more</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
